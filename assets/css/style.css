@@ -17,6 +17,12 @@
 
 :root {
 
+  font-family: Lora,
+    Noto Serif SC,
+    serif;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
   /**
    * colors
    */
@@ -28,13 +34,15 @@
       hsl(0, 0%, 19%) 97%);
   --bg-gradient-jet: linear-gradient(to bottom right,
       hsla(240, 1%, 18%, 0.251) 0%,
-      hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+      hsla(240, 2%, 11%, 0) 100%),
+    hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(to bottom right,
       hsl(45, 100%, 71%) 0%,
       hsla(36, 100%, 69%, 0) 50%);
   --bg-gradient-yellow-2: linear-gradient(135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
-      hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+      hsla(35, 100%, 68%, 0) 59.86%),
+    hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(to bottom right,
       hsl(0, 0%, 25%) 0%,
       hsla(0, 0%, 25%, 0) 50%);
@@ -62,7 +70,8 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: 'Poppins',
+    sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -162,7 +171,7 @@ html {
 }
 
 body {
-  background: var(--smoky-black);
+  /* background: var(--smoky-black); */
 }
 
 
@@ -175,8 +184,8 @@ body {
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  /* background: var(--eerie-black-2); */
+  /* border: 1px solid var(--jet); */
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -187,7 +196,7 @@ article {
   width: 100%;
   height: 1px;
   background: var(--jet);
-  margin: 16px 0;
+  margin: 8px 0 15px 0;
 }
 
 .icon-box {
@@ -241,7 +250,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: var(--white-2);
+  /* color: var(--white-2); */
   text-transform: capitalize;
 }
 
@@ -361,23 +370,27 @@ main {
 }
 
 .sidebar-info_more p {
-  color: var(--light-gray);
+  /* color: var(--light-gray); */
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
+.sidebar-info_more strong {
+  font-size: var(--fs-7);
+}
+
 .avatar-box {
-  background: var(--bg-gradient-onyx);
+  /* background: var(--bg-gradient-onyx); */
   border-radius: 20px;
 }
 
 .info-content .name {
-  color: var(--white-2);
+  /* color: var(--white-2); */
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
-  letter-spacing: -0.25px;
+  letter-spacing: 0.05em;
   margin-bottom: 10px;
 }
 
@@ -483,7 +496,7 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: var(--dark-gray-70);
   font-size: 18px;
 }
 
@@ -505,7 +518,8 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  /* background: hsla(240, 1%, 17%, 0.75); */
+  background: #f2f2f2;
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -522,7 +536,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  /* color: var(--light-gray); */
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -534,7 +548,8 @@ main {
 }
 
 .navbar-link.active {
-  color: var(--orange-yellow-crayola);
+  /* color: var(--orange-yellow-crayola); */
+  color: rgb(196, 15, 15);
 }
 
 
@@ -550,7 +565,7 @@ main {
 }
 
 .about-text {
-  color: var(--light-gray);
+  /* color: var(--light-gray); */
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -558,6 +573,26 @@ main {
 
 .about-text p {
   margin-bottom: 15px;
+  padding: 0.5em 0 0 0;
+}
+
+.about-text p span {
+  /* margin-bottom: 15px; */
+  padding: 1.5em 0 0 0;
+}
+
+.about-text a {
+  color: inherit;
+  display: inline;
+}
+
+.about-text table {
+  width: 100%;
+}
+
+.about-text table td {
+  text-align: left;
+  padding: 0.5em;
 }
 
 
@@ -1489,7 +1524,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: 258px;
     margin-bottom: 30px;
   }
 
@@ -1506,11 +1541,9 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
-    width: 120px;
-  }
-
-  .info-content .name {
-    margin-bottom: 15px;
+    width: 220px;
+    border-radius: 50%;
+    overflow: hidden;
   }
 
   .info-content .title {
@@ -1530,10 +1563,6 @@ textarea.form-input::-webkit-resizer {
 
   .info_more-btn ion-icon {
     display: none;
-  }
-
-  .separator {
-    margin: 32px 0;
   }
 
   .contacts-list {
@@ -1928,6 +1957,7 @@ textarea.form-input::-webkit-resizer {
 
   main {
     margin-bottom: 60px;
+    margin-top: 68px;
   }
 
   .main-content {
@@ -2080,7 +2110,8 @@ textarea.form-input::-webkit-resizer {
   .main-content {
     min-width: 75%;
     width: 75%;
-    margin: 0;
+    /* margin-top: 70px; */
+    /* margin: 0; */
   }
 
 
@@ -2091,7 +2122,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    top: 70px;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
@@ -2101,10 +2132,6 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar-info {
     flex-direction: column;
-  }
-
-  .avatar-box img {
-    width: 150px;
   }
 
   .info-content .name {
@@ -2159,4 +2186,67 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 
+}
+
+.header {
+  background-color: inherit;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-bottom-color: rgb(196, 15, 15);
+  background: #f2f2f2;
+}
+
+/* Create a top navigation bar with a black background color  */
+.topnav {
+  background-color: inherit;
+  overflow: hidden;
+  position: relative;
+  left: 20%;
+  /* z-index: 99999; */
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 60%;
+  /* Full width */
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav p {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.25rem !important;
+  font: 700 !important;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav img {
+  margin-top: 18px;
+  float: right;
+  height: 25px;
+  width: 25px;
 }
