@@ -81,7 +81,7 @@
   --fs-5: 15px;
   --fs-6: 14px;
   --fs-7: 13px;
-  --fs-8: 11px;
+  --fs-8: 12px;
 
   /* font-weight */
   --fw-300: 300;
@@ -518,11 +518,10 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  /* background: hsla(240, 1%, 17%, 0.75); */
-  background: #f2f2f2;
+  background: #fbfafa;
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  border-radius: 8px 8px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
