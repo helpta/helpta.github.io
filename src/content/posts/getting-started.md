@@ -5,6 +5,7 @@ date: 2040-03-09T00:00:00+08:00
 tags:
   - sample post
   - theme
+hidden: true
 ---
 
 ## Getting Started

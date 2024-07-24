@@ -7,6 +7,7 @@ tags:
   - English
   - theme
 toc: false
+hidden: true
 ---
 
 This page is an adapted version of [markdown-test-page](https://github.com/fullpipe/markdown-test-page). It should give you an idea of how different elements are styled on this template.
