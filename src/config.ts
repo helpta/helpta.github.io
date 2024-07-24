@@ -1,10 +1,9 @@
 import type { PostHideElements } from "~/content/config";
 
-export const Site = "https://astro-blog-zozo.pages.dev";
+export const Site = "https://www.helpta.com";
 export const SiteLanguage = "en";
 export const SiteTitle = "Do";
-// export const SiteDescription =
-//   "Responsible, Sincere and Pursuit of Excellence.";
+export const SiteDescription = "";
 export const FooterDescription =
   "Responsible, Sincere and Pursuit of Excellence.";
 export const AdminName = "hongkai";

@@ -6,7 +6,7 @@ tags:
   - 中文
   - 真言
   - theme
-hidden: true
+hidden: false
 ---
 
 > 修学药师灌顶真言是药师法门的一部分，读诵修持有着极大的功德利益
