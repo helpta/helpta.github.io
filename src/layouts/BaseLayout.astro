@@ -131,6 +131,16 @@ const socialImg = new URL(socialImage ?? '/og.png', Astro.url).href;
 			@tailwind components;
 			@tailwind utilities;
 		</style>
+
+				<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYH3N4Z6Q"></script>
+		<script is:inline>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-LZYH3N4Z6Q');
+		</script>
 	</head>
 	<body class:list={bodyClass}>
 		<slot />
