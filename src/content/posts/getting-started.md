@@ -1,11 +1,15 @@
 ---
-title: Getting Started🚀
+slug: getting-started
+title: Getting Started🚀1
 description: How to use this blog template✨
-date: 2040-03-09T00:00:00+08:00
+image: ../attachments/100.jpg
+date: 2024-07-09T00:00:00+08:00
 tags:
   - sample post
   - theme
 hidden: true
+hide:
+  - title
 ---
 
 ## Getting Started
