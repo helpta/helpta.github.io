@@ -4,7 +4,7 @@ date: 2024-07-28T18:33:00+08:00
 lastmod: 2024-07-28T18:33:00+08:00
 slug: about-hongkai-cn
 description: 一步一步，活成自己喜欢的样子。
-image: ../attachments/about-hongkai.jpg
+# image: ../attachments/about-hongkai.jpg
 tags:
   - 作者
   - Author
