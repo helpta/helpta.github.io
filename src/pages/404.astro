@@ -6,14 +6,19 @@
   <title>页面未找到</title>
 </Head> -->
 
-<h1>404 - 页面未找到</h1>
-<p>很抱歉，您访问的页面不存在。</p>
+<h1>Oops! We couldn't find that page.</h1>
+<p>It looks like the page you were trying to find doesn't exist. You'll be automatically redirected to the homepage in 3 seconds.</p>
 
 <script>
   // 判断 URL 是否包含多余斜杠
   const url = new URL(window.location.href);
-  if (url.pathname.endsWith('/')) {
-    // 重定向到没有斜杠的 URL
-    window.location.href = url.pathname.slice(0, -1);
+  const pathname = url.pathname;
+  if (pathname.endsWith('/')) {
+    // 如果有结尾斜杠，重定向到去掉斜杠的 URL
+    window.location.href = pathname.slice(0, -1);
+  }else{
+     setTimeout(() => {
+    window.location.href = '/';
+  }, 3000); // 3000 毫秒 = 3 秒
   }
 </script>
