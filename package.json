@@ -69,5 +69,9 @@
 	"overrides": {
 		"sharp": "^0.33.3"
 	},
-	"trustedDependencies": ["@biomejs/biome", "esbuild", "sharp"]
+	"trustedDependencies": [
+		"@biomejs/biome",
+		"esbuild",
+		"sharp"
+	]
 }
